@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <ng-container *ngFor="let data of inputControlArr">
+        <div class="row mb-3">
+            <div class="col">
+                <label>Start date :</label><br>
+                <p-calendar [(ngModel)]="data.startDate"></p-calendar>
+            </div>
+
+            <div class="col">
+                <label>End date :</label><br>
+                <p-calendar [(ngModel)]="data.endDate"></p-calendar>
+            </div>
+        </div>
+    </ng-container>
+</div>
