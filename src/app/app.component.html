@@ -2,13 +2,27 @@
     <ng-container *ngFor="let data of inputControlArr">
         <div class="row mb-3">
             <div class="col">
-                <label>Start date :</label><br>
-                <p-calendar [(ngModel)]="data.startDate"></p-calendar>
+                <div class="flex-group">
+                    <div class="flex-column">
+                        <label>Start date :</label>
+                    </div>
+
+                    <div class="flex-column">
+                        <p-calendar [(ngModel)]="data.startDate"></p-calendar>
+                    </div>
+                </div>
             </div>
 
             <div class="col">
-                <label>End date :</label><br>
-                <p-calendar [(ngModel)]="data.endDate"></p-calendar>
+                <div class="flex-group">
+                    <div class="flex-column">
+                        <label>End date :</label>
+                    </div>
+
+                    <div class="flex-column">
+                        <p-calendar [(ngModel)]="data.endDate"></p-calendar>
+                    </div>
+                </div>
             </div>
         </div>
     </ng-container>
